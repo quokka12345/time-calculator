@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Time Calculator</h1>
+        <div class="inputs">
+            <label>1 Min: <input type="number" id="oneMin" value="0"></label>
+            <label>5 Min: <input type="number" id="fiveMin" value="0"></label>
+            <label>15 Min: <input type="number" id="fifteenMin" value="0"></label>
+            <label>30 Min: <input type="number" id="thirtyMin" value="0"></label>
+            <label>60 Min (1 Hour): <input type="number" id="sixtyMin" value="0"></label>
+            <label>4 Hours: <input type="number" id="fourHr" value="0"></label>
+            <label>12 Hours: <input type="number" id="twelveHr" value="0"></label>
+            <label>15 Hours: <input type="number" id="fifteenHr" value="0"></label>
+            <label>1 Day (24 Hours): <input type="number" id="oneDay" value="0"></label>
+            <label>3 Days (72 Hours): <input type="number" id="threeDay" value="0"></label>
+        </div>
+        <button onclick="calculateTotalTime()">Calculate</button>
+        <button onclick="clearInputs()">Clear</button>
+        <div class="output" id="output">
+            Total Time: 0 days, 0 hours, 0 minutes
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
