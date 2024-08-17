@@ -7,6 +7,7 @@ function calculateTotalTime() {
     let thirtyMin = parseInt(document.getElementById("thirtyMin").value) || 0;
     let sixtyMin = parseInt(document.getElementById("sixtyMin").value) || 0;
     let fourHr = parseInt(document.getElementById("fourHr").value) || 0;
+    let eightHr = parseInt(document.getElementById("eightHr").value) || 0;
     let twelveHr = parseInt(document.getElementById("twelveHr").value) || 0;
     let fifteenHr = parseInt(document.getElementById("fifteenHr").value) || 0;
     let oneDay = parseInt(document.getElementById("oneDay").value) || 0;
@@ -18,6 +19,7 @@ function calculateTotalTime() {
     totalMinutes += thirtyMin * 30;
     totalMinutes += sixtyMin * 60;
     totalMinutes += fourHr * 240;
+    totalMinutes += eightHr * 480;
     totalMinutes += twelveHr * 720;
     totalMinutes += fifteenHr * 900;
     totalMinutes += oneDay * 1440;
